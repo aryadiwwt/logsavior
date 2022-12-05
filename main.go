@@ -27,7 +27,7 @@ func main() {
 	signal.Notify(sig, syscall.SIGINT, syscall.SIGTERM)
 	<-sig
 }
-
+// push to bucket
 func PushObject() {
   currentTime := time.Now()
 	app := "gsutil"
